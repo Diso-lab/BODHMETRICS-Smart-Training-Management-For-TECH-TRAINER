@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bodhmetrics — Reports</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="reports">
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <main class="main">
+      <div class="mobile-top">
+        <img src="logo.jpg" alt="BodhMetrics" style="width:32px;border-radius:8px;" />
+        <div class="brand">BODHMETRICS</div>
+        <button class="icon-btn" id="logoutTop">Sign Out</button>
+      </div>
+
+      <header class="page-header">
+        <div>
+          <h1>Reports</h1>
+          <p>Performance analytics and insights across your trainees</p>
+        </div>
+      </header>
+
+      <div class="separator"></div>
+
+      <section class="reports-layout">
+        <div class="reports-stack">
+          <div class="reports-card table-card" id="distributionCard"></div>
+          <div class="reports-card table-card" id="topPerformersCard"></div>
+        </div>
+        <div class="reports-stack">
+          <div class="reports-card table-card" id="scoreStatsCard"></div>
+          <div class="reports-card table-card" id="roleScoresCard"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

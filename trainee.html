@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bodhmetrics — My Progress</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="trainee">
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <main class="main">
+      <div class="mobile-top">
+        <img src="logo.jpg" alt="BodhMetrics" style="width:32px;border-radius:8px;" />
+        <div class="brand">BODHMETRICS</div>
+        <button class="icon-btn" id="logoutTop">Sign Out</button>
+      </div>
+
+      <header class="page-header">
+        <div>
+          <h1>My Progress</h1>
+          <p>Track your performance and communicate with your trainer</p>
+        </div>
+      </header>
+
+      <div class="separator"></div>
+
+      <!-- Score Hero -->
+      <section class="trainee-hero" id="traineeHero">
+        <div class="score-hero-card">
+          <div class="score-ring-wrap">
+            <svg class="score-ring" viewBox="0 0 120 120">
+              <circle class="ring-bg" cx="60" cy="60" r="52"/>
+              <circle class="ring-fill" id="ringFill" cx="60" cy="60" r="52" stroke-dasharray="327" stroke-dashoffset="327"/>
+            </svg>
+            <div class="score-ring-value" id="heroScore">—</div>
+          </div>
+          <div class="score-hero-info">
+            <h2 id="traineeWelcome">Welcome!</h2>
+            <p class="muted-text" id="trainerInfo">Linked Trainer: —</p>
+            <div class="badge-lg" id="perfBadge">—</div>
+            <p class="muted-text" style="margin-top:12px;font-size:13px;">Your Trainee ID</p>
+            <code class="invite-id" id="myTraineeId" style="font-size:12px;">—</code>
+          </div>
+        </div>
+      </section>
+
+      <!-- Query Section -->
+      <section class="two-col" style="margin-top:24px;">
+        <div class="form-card">
+          <h2>📩 Ask Your Trainer</h2>
+          <form id="queryForm">
+            <div class="form-group">
+              <label for="queryText">YOUR QUERY</label>
+              <textarea class="input" id="queryText" rows="4" placeholder="Type your question or concern here..." required style="height:auto;padding-top:14px;resize:vertical;"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Query</button>
+          </form>
+        </div>
+
+        <div class="table-card">
+          <div class="card-title" style="margin-bottom:16px;">My Sent Queries</div>
+          <div class="query-list" id="myQueryList">
+            <p class="muted-text">No queries sent yet.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

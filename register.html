@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bodhmetrics — Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-card">
+      <img src="logo.jpg" alt="BodhMetrics" style="width:64px;border-radius:14px;margin-bottom:6px;" />
+      <div class="brand">BODHMETRICS</div>
+      <p class="tagline">CREATE YOUR ACCOUNT</p>
+
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="reg-username">USERNAME</label>
+          <input class="input" id="reg-username" type="text" placeholder="Choose a username" required />
+        </div>
+
+        <div class="form-group">
+          <label for="reg-role">ACCOUNT TYPE</label>
+          <select class="input" id="reg-role" required>
+            <option value="Trainer">Trainer (Teacher / Manager)</option>
+            <option value="Trainee">Trainee (Student)</option>
+          </select>
+        </div>
+
+        <div class="form-group" id="trainer-id-group" style="display:none;">
+          <label for="reg-trainerid">TRAINER REFERRAL ID</label>
+          <input class="input" id="reg-trainerid" type="text" placeholder="Paste the ID your trainer shared" />
+          <p class="helper" style="margin-top:8px;">Ask your trainer for their unique ID from the dashboard.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-password">PASSWORD</label>
+          <input class="input" id="reg-password" type="password" placeholder="Choose a password" required />
+        </div>
+
+        <button type="submit" class="btn-primary">Create Account</button>
+
+        <div style="margin-top:18px;text-align:center;">
+          <a href="index.html" style="color:var(--blue);font-size:14px;font-weight:600;">
+            Already have an account? Sign In →
+          </a>
+        </div>
+
+        <p id="registerError" class="error"></p>
+        <p id="registerSuccess" style="color:#68eb87;font-size:14px;text-align:center;margin-top:8px;min-height:20px;"></p>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
