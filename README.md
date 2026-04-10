@@ -1,4 +1,5 @@
-﻿# employee-performance-management-system
+﻿# BodhMetrics-Smart Training Management System
+ 
 BodhMetrics 📊 is a Smart Training Management System designed to help trainers efficiently manage and track trainee performance. In many organizations, trainers handle data manually using spreadsheets or notebooks 📒, which is time-consuming ⏳ and prone to errors ❌. This project provides a simple and effective digital solution to overcome these challenges.
 
 The system is a web-based application 🌐 developed using HTML, CSS, and JavaScript 💻. It allows trainers to store trainee details such as name, role, and performance score in an organized way. The application includes a secure login system 🔐, ensuring only authorized users can access the platform.
